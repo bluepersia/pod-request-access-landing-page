@@ -44,6 +44,9 @@ body {
     text-transform: uppercase;
 
     order: 0;
+    max-width: 635px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .heading-1 span.green {
@@ -59,12 +62,15 @@ body {
     color: var(--color-6);
 
     order: 1;
+    max-width: 445px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 .input-1 
 {
-    font-size: .93em;
+    font-size: .93rem;
     font-family: inherit;
     font-weight: bold;
     padding: .64em 2.28em;
@@ -101,8 +107,15 @@ body {
     padding: .64em 1.92em;
     width: 100%;
     border-radius: 2em;
+    cursor: pointer;
+    transition: background-color 300ms;
 }
 
+
+.btn:hover 
+{
+    background-color: hsl(157, 74%, 92%);
+}
 
 
 .img-host-desktop{
@@ -119,6 +132,9 @@ body {
 .main_content {
     display: flex;
     flex-direction: column;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .companies 
@@ -128,10 +144,17 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 3.42em;
+    max-width: 536px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .form {
     order: 3;
+    width: 100%;
+    max-width: 445px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .company_logo {
@@ -145,3 +168,79 @@ body {
     gap: 1.14em;
 }
 
+
+
+@media  (min-width:768px) {
+    
+
+    html {
+        font-size: 18px;
+    }
+    body {
+        background: url(../assets/tablet/image-host.jpg);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-color: var(--color-3);
+        background-blend-mode: normal;
+        text-align: left;
+    }
+
+
+    .heading-1 {
+        font-size: 2.66rem;
+        line-height: 1.16em;
+        margin-left: 0;
+    }
+    .body-1 
+    {
+        line-height: 1.55em;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 2.27em;
+    }
+
+    .header {
+        padding: 2.77em 0 8.44em;
+    }
+
+    .main_content {
+        padding: 5.16em 0 0;
+        background-color:var(--color-3);
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .companies {
+        order:3;
+        margin-left: 0;
+    }
+
+    .form {
+        order: 2;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 3.55em;
+    }
+    .input-1-wrapper 
+    {
+        display: inherit;
+        position: relative;
+    }
+
+    .input-1 {
+        padding: 1em 2.28em;
+        font-size: .77rem;
+    }
+
+    .btn {
+        font-size: .77rem;
+    }
+
+    .btn-request {
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: fit-content;
+    }
+}
