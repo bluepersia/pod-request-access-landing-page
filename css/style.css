@@ -87,10 +87,24 @@ body {
 
 .input-1_error 
 {
+    opacity: 0%;
+    pointer-events: none;
     padding-left: 2.28em;
     font-size: .85rem;
     font-weight: bold;
     color: #FB3E3E;
+    position: absolute;
+    top:1em;
+    transform:translateY(100%);
+    transition: opacity 300ms;
+}
+
+.input-1-wrapper.invalid .input-1_error {
+    opacity: 100%;
+}
+
+.input-1-wrapper.invalid .input-1 {
+    margin-bottom: 1em;
 }
 
 
@@ -166,6 +180,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.14em;
+
+    position: relative;
 }
 
 
@@ -200,6 +216,10 @@ body {
         margin-bottom: 2.27em;
     }
 
+    .input-1-wrapper.invalid .input-1 {
+        margin-bottom: 0em;
+    }
+   
     .header {
         padding: 2.77em 0 8.44em;
     }
@@ -225,7 +245,6 @@ body {
     .input-1-wrapper 
     {
         display: inherit;
-        position: relative;
     }
 
     .input-1 {
