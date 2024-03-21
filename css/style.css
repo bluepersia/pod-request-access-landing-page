@@ -1,6 +1,6 @@
 :root 
 {
-    --color-1: hsl(157, 74%, 82%);
+    --color-1: hsl(157, 74%, 62%);
     --color-2: hsl(225, 26%, 23%);
     --color-3: hsl(224, 35%, 11%);
     --color-4: hsl(0, 0%, 100%);
@@ -15,6 +15,13 @@ html {
 body {
     margin: 0;
     font-family: "Chivo", sans-serif;;
+    
+    background-color: hsla(224, 35%, 11%, 90%);
+    background-image: url(../assets/mobile/image-host.jpg);
+    background-blend-mode:multiply;
+    text-align: center;
+    color: var(--color-4);
+    padding: 0 6.4%;
 }
 
 * {
@@ -33,6 +40,14 @@ body {
     font-size: 1.73rem;
     line-height: 1.46em;
     font-weight: 300;
+
+    text-transform: uppercase;
+
+    order: 0;
+}
+
+.heading-1 span.green {
+    color: var(--color-1);
 }
 
 .body-1 
@@ -40,6 +55,10 @@ body {
     font-size: 1rem;
     line-height: 1.66em;
     font-weight: 300;
+
+    color: var(--color-6);
+
+    order: 1;
 }
 
 
@@ -48,9 +67,12 @@ body {
     font-size: .93em;
     font-family: inherit;
     font-weight: bold;
-    padding: 1em 2.28em;
+    padding: .64em 2.28em;
     color: var(--color-4);
     background-color: var(--color-2);
+    border: none;
+    width: 100%;
+    border-radius: 2em;
 }
 .input-1::placeholder {
     color: var(--color-4);
@@ -69,7 +91,7 @@ body {
 
 .btn 
 {
-    font-size: 1.6em;
+    font-size: 1rem;
     font-weight: bold;
     color: var(--color-3);
     background-color: var(--color-1);
@@ -77,4 +99,49 @@ body {
     border: none;
     text-align: center;
     padding: .64em 1.92em;
+    width: 100%;
+    border-radius: 2em;
 }
+
+
+
+.img-host-desktop{
+    display: none;
+}
+
+
+
+.header {
+    padding: 4.42em 0 4.07em;
+}
+
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.companies 
+{
+    order: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3.42em;
+}
+
+.form {
+    order: 3;
+}
+
+.company_logo {
+    width: 20%;
+}
+
+.input-1-wrapper {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.14em;
+}
+
