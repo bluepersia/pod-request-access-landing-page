@@ -1,0 +1,67 @@
+:root 
+{
+    --color-1: hsl(157, 74%, 82%);
+    --color-2: hsl(225, 26%, 23%);
+    --color-3: hsl(224, 35%, 11%);
+    --color-4: hsl(0, 0%, 100%);
+    --color-5: hsl(225, 21%, 45%);
+    --color-6: hsl(225, 40%, 83%);
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: "Chivo", sans-serif;;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:first-child {
+    margin-top: 0;
+}
+*:last-child {
+    margin-bottom: 0;
+}
+
+.heading-1 
+{
+    font-size: 1.73rem;
+    line-height: 1.46em;
+    font-weight: 300;
+}
+
+.body-1 
+{
+    font-size: 1rem;
+    line-height: 1.66em;
+    font-weight: 300;
+}
+
+
+.input-1 
+{
+    font-size: .93em;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 1em 2.28em;
+    color: var(--color-4);
+    background-color: var(--color-2);
+}
+.input-1::placeholder {
+    color: var(--color-4);
+    opacity: 50%;
+}
+
+.input-1_error 
+{
+    padding-left: 2.28em;
+    font-size: .85rem;
+    font-weight: bold;
+    color: #FB3E3E;
+}
+
